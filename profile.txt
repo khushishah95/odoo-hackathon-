@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body>
+    <h1>Profile</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.age.label }}<br>
+            {{ form.age() }}
+        </p>
+        <p>
+            {{ form.weight.label }}<br>
+            {{ form.weight() }}
+        </p>
+        <p>
+            {{ form.height.label }}<br>
+            {{ form.height() }}
+        </p>
+        <p>
+            {{ form.dietary_preferences.label }}<br>
+            {{ form.dietary_preferences() }}
+        </p>
+        <p>
+            {{ form.allergies.label }}<br>
+            {{ form.allergies() }}
+        </p>
+        <p>
+            {{ form.health_goals.label }}<br>
+            {{ form.health_goals() }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+</body>
+</html>
